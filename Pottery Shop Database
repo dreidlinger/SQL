@@ -1,0 +1,27 @@
+--create a database for a pottery shop that specializes in mugs.
+
+CREATE TABLE Poppylan (ID INTEGER PRIMARY KEY, item TEXT, productioncost INTEGER, backstock INTEGER, price INTEGER);
+
+INSERT INTO Poppylan VALUES (1,"Poppylan TM mug", 10, 25, 15);
+INSERT INTO Poppylan VALUES (2, "Beetle mug", 8, 15, 10);
+INSERT INTO Poppylan VALUES (3, "Bichon Frise mug", 10, 5, 15);
+INSERT INTO Poppylan VALUES (4, "Pea Pod mug", 8, 10, 10);
+INSERT INTO Poppylan VALUES (5, "BLM mug", 10, 3, 15);
+INSERT INTO Poppylan VALUES (6, "Unicorny mug", 11, 6, 16);
+INSERT INTO Poppylan VALUES (7, "Luna mug", 8, 14, 14);
+INSERT INTO Poppylan VALUES (8, "Ugh mug", 9, 5, 13);
+INSERT INTO Poppylan VALUES (9, "Girl Scouts mug", 12, 10, 8);
+INSERT INTO Poppylan VALUES (10, "Hades mug", 15, 5, 20); 
+INSERT INTO Poppylan VALUES (11, "Peony mug", 7, 12, 8);
+INSERT INTO Poppylan VALUES (12, "Olympus Clouds mug", 9,14, 16);
+INSERT INTO Poppylan VALUES (13, "Moth Flower mug", 7, 3, 12);
+INSERT INTO Poppylan VALUES (14, "D&D mug", 8, 5, 10);
+INSERT INTO Poppylan VALUES (15, "Oasis mug", 7, 20, 14);
+
+--display the database in order by id.
+
+SELECT * FROM Poppylan ORDER BY id;
+
+--what is the most expensive item to produce and how many are in backstock? 
+
+SELECT item, productioncost, backstock FROM Poppylan ORDER BY productioncost desc;
