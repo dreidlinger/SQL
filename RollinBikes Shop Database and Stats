@@ -1,0 +1,38 @@
+
+/** RollinBikes:
+Zephyr (250, 10, 5)
+Speedy (60, 20, 30)
+Sunshine (100, 8, 13)
+Countryroad (300, 4, 20)
+CitySlick (120, 3, 30)
+Rocky (59, 6, 50)
+Yellowstone (250, 2, 50)
+Ozone (60, 5, 15)
+Reggie (45, 4, 40)
+Sylvia (60, 2, 100)
+Niagra (1500, 2, 5)
+Seabreeze (600, 4, 2)
+Daisy (78, 8, 3)
+Junglered (700, 5, 19)
+Stumptown (400, 6, 80)
+**/
+
+CREATE TABLE RollinBikes (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, backstock INTEGER, sold INTEGER);
+
+INSERT INTO RollinBikes VALUES (1, "Zephyr", 250, 10, 5);
+INSERT INTO RollinBikes VALUES (2, "Speedy", 60, 20, 30);
+INSERT INTO RollinBikes VALUES (3, "Sunshine", 100, 8, 13);
+INSERT INTO RollinBikes VALUES (4, "Countryroad", 300, 4, 20);
+INSERT INTO RollinBikes VALUES (5, "CitySlick", 120, 3, 30);
+INSERT INTO RollinBikes VALUES (6, "Rocky", 59, 6, 50);
+INSERT INTO RollinBikes VALUES (7, "Yellowstone", 250, 2, 50);
+INSERT INTO RollinBikes VALUES (8, "Ozone", 60, 5, 15);
+INSERT INTO RollinBikes VALUES (9, "Reggie",45, 4, 40);
+INSERT INTO RollinBikes VALUES (10, "Sylvia", 60, 2, 100);
+INSERT INTO RollinBikes VALUES (11, "Niagra", 1500, 2, 5);
+INSERT INTO RollinBikes VALUES (12, "Seabreeze", 600, 4, 2);
+INSERT INTO RollinBikes VALUES (13, "Daisy", 78, 8, 3);
+INSERT INTO RollinBikes VALUES (14, "Junglered", 700, 5, 19);
+INSERT INTO RollinBikes VALUES (15, "Stumptown", 400, 6, 80);
+
+SELECT * FROM RollinBikes WHERE sold > 10 ORDER BY price;
